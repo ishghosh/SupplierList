@@ -6,7 +6,7 @@ sap.ui.define([
 	return BaseController.extend("com.supplier.SupplierList.controller.App", {
 
 		onInit: function () {
-
+			sap.m.MessageToast.show("Hi");
 		}
 
 	});
