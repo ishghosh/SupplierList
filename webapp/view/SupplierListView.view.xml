@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.supplier.SupplierList.controller.SupplierListView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Page id="supplierListPage" title="{i18n>SupplierList}" class="sapUiResponsiveContentPadding">
+		<content>
+			<List id="idsupplierlist" headerText="{i18n>ListOfAllSuppliers}" items="{/}">
+				<items>
+					<StandardListItem title="{Name}" type="Navigation" iconDensityAware="false" iconInset="false" press="onListItemPressed"/>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

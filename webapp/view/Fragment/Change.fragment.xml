@@ -1,0 +1,42 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Dialog title="Country List">
+		<VBox class="sapUiSmallMargin">
+			<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+				labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+				columnsL="1" columnsM="1" singleContainerFullSize="false">
+				<f:content>
+					<Label text="ID"/>
+					<Input editable="true" id="idtext"/>
+					<Label text="Name"/>
+					<Input id="idname" value="{Name}"></Input>
+					<Label text="Concurrency"/>
+					<Input id="idconcurrency" value="{Concurrency}"></Input>
+					<Label text="Street"/>
+					<Input id="idstreet" value="{Address/Street}"></Input>
+					<Label text="City"/>
+					<Input id="idcity" value="{Address/City}"></Input>
+					<Label text="State"/>
+					<Input id="idstate" value="{Address/State}"></Input>
+					<Label text="ZipCode"/>
+					<Input id="idcode" value="{Address/ZipCode}"></Input>
+					<Label text="Country"/>
+					<Input id="idcountry" value="{Address/Country}"></Input>
+				</f:content>
+			</f:SimpleForm>
+		</VBox>
+		<beginButton>
+			<Button press="onSaveLinkPressF4" text="Save" type="Accept"/>
+		</beginButton>
+		<endButton>
+			<Button press="onCloseLinkPressF4" text="Close" type="Reject"/>
+		</endButton>
+		<!--	<buttons>
+			<Button>
+				<Button press="onSaveName" enabled="false" text="Close" type="Submit"/>
+			</Button>
+			<Button>
+				<Button press="onCloseLinkPressF4" text="Close" type="Reject"/>
+			</Button>
+		</buttons>-->
+	</Dialog>
+</core:FragmentDefinition>
